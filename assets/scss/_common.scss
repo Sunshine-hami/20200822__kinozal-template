@@ -1,34 +1,28 @@
-html
-{
-    font-size: $font-size;
+html {
+  overflow-y: scroll;
 
-    overflow-y: scroll;
+  font-size: $font-size;
 }
-body
-{
-    font-family: $font-main;
-    font-size: 1rem;
+body {
+  font-family: $font-main;
+  font-size: 1rem;
 }
 
-a
-{
-    color: $color-primary;
+a {
+  color: $color-primary;
 
-    &:hover,
-    &:focus
-    {
-        text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
 
-        color: $color-accent;
-    }
+    color: $color-accent;
+  }
 }
 
-h1
-{
-    font-family: $font-header;
+h1 {
+  font-family: $font-header;
 }
 
-h2
-{
-    font-family: $font-header;
+h2 {
+  font-family: $font-header;
 }
