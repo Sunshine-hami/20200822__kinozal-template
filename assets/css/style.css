@@ -20,6 +20,12 @@
   background-color: #517ba2;
 }
 
+.navbar-inverse .navbar-nav > li > a {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
   background-color: #165690;
 }
@@ -52,8 +58,15 @@
   border-radius: 0 0 4px 4px;
 }
 
+.input-lg,
 .input-group-lg > .form-control {
-  font-size: -0.875rem;
+  font-size: 0.875rem;
+}
+
+.thumbnail {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 html {
@@ -119,6 +132,86 @@ h2 {
 
 .vertical-slider img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+
+.user-login__tabs a {
+  padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
+}
+
+.site-news-item {
+  clear: both;
+  position: relative;
+}
+
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -5px;
+  width: calc(100% - 85px);
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .thumbnail {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+
+.site-news-item__image {
+  float: left;
+  width: 75px;
+  margin: 0 10px 10px 0;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+
+.site-news-item__title a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-line-clamp: 2;
+}
+
+.site-news-item__date {
+  text-align: right;
+  color: darken #dddddd, 30%;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
